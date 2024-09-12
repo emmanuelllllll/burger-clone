@@ -1,0 +1,241 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(243, 232, 218);
+  overflow-x: hidden;
+  color: #333;
+}
+
+.one {
+  display: flex;
+  gap: 2rem;
+  margin-left: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: darkred;
+}
+
+.myhlinks :hover {
+  color: #a5630d;
+}
+a {
+  text-decoration: none;
+}
+
+.parent {
+  /* display: flex; */
+  width: 100%;
+}
+
+/* my input */
+.input {
+  border: rgb(248, 227, 199) solid;
+  background-color: rgb(239, 224, 204);
+  border-width: 5px;
+  gap: 2rem;
+  color: rgb(80, 35, 20);
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.rightInputContainer {
+  width: 50%;
+}
+
+.leftInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.primaryInputContainer {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 1em;
+  border: 5px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    flex-direction: column;
+  }
+}
+.rightInputContainer {
+  width: 100%;
+}
+
+.leftInputContainer {
+  width: 100%;
+}
+
+.second {
+  border: 5px solid rgb(215, 35, 0);
+  background-color: rgb(215, 35, 0);
+  padding-left: 20px;
+  /* padding-right: 500px; */
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 400px;
+  border-width: 100px;
+}
+
+/* Button Styles */
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 10px;
+  cursor: pointer;
+  font-size: small;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #faf5f5;
+  color: #000000;
+}
+
+/* my background image  */
+.herBackground {
+  height: 450px;
+  width: 100%;
+  background-image: url("./Have-it-your-Way-edit-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.third {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.newsGeneralContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  /* padding-bottom: 5rem;
+  padding-left: 4rem; */
+  line-height: 1.5;
+  font-family: fantasy;
+  color: #591919;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+h1 {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  color: rgb(121, 42, 42);
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  background-color: rgb(80, 35, 20);
+  color: #fff;
+  text-align: center;
+  padding: 70px 0;
+  /* bottom: 0; */
+  width: 100%;
+}
+.bp {
+  font-family: fantasy;
+  padding-right: 60rem;
+  font-size: x-large;
+}
+.myfstyle {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-bottom: 5rem;
+  padding-left: 40rem;
+  line-height: 1.7;
+  font-size: large;
+  color: #ebebeb;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .one {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .input {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .rightInputContainer,
+  .leftInputContainer {
+    width: 100%;
+  }
+
+  .second {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .third,
+  .newsGeneralContainer {
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .bp {
+    padding-right: 0;
+    font-size: large;
+  }
+
+  .myfstyle {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    margin-left: 1rem;
+  }
+
+  .button {
+    align-items: center;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+}
